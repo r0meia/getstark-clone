@@ -2,9 +2,115 @@
   font-family: AmirGrotesk;
   src: url(font/ArminGrotesk-Regular.woff);
 }
+@font-face {
+  font-family: AmirGroteskBlack;
+  src: url(font/ArminGrotesk-UltraBold.woff);
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'AmirGrotesk';
+  font-family: 'AmirGrotesk', 'AmirGroteskBlack';
+}
+h1, h2, h3, h4, h5, p {
+  color: #10284b;
+}
+nav {
+  background-color: #f6f6eb;
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.free-trail {
+  background-color: #381fd1;
+  border-radius: 5px;
+  padding: 0.41rem 0.75rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.trail-button {
+  margin-left: 1.5rem;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  margin-right: 0.75rem;
+}
+.logo {
+  height: 32px;
+}
+section {
+  padding: 0 1rem;
+}
+.library-wrapper {
+  border-bottom: 1px solid #e5e5e6;
+  margin: 0 1rem
+}
+.library {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  grid-auto-rows: 1fr;
+}
+.library > a {
+  color: #4b4b4e;
+  text-decoration: none;
+  font-weight: 600;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+.library > a:first-of-type {
+  color: #381fd1;
+}
+.library > a > button {
+  margin-left: 1.25rem;
+  background: none;
+  color: inherit;
+  border: none;
+}
+.library > input {
+  width: 57.6vw;
+  border: 2px solid #acacaf;
+  border-radius: 5px;
+}
+.library >input::placeholder {
+  color: #acacaf;
+  padding: 1rem;
+}
+.heading {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading > h1 {
+  font-family: 'AmirGroteskBlack';
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 53px;
+}
+.heading > a {
+  min-width: 86px;
+  color: #381fd1;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .07em;
+}
+.section-heading > p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
