@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
 @font-face {
   font-family: AmirGrotesk;
   src: url(font/ArminGrotesk-Regular.woff);
@@ -6,8 +8,6 @@
   font-family: AmirGroteskBlack;
   src: url(font/ArminGrotesk-UltraBold.woff);
 }
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -113,4 +113,123 @@ section {
 .section-heading > p {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
+}
+.library-resources-wrapper {
+  display: flex;
+  padding: 1.5rem;
+  border: 1px solid #e5e5e6;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  height: 218px;
+  line-height: 1.5rem;
+}
+.library-resources-wrapper > a > img {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #cbcbcd;
+  border-radius: 10px;
+}
+.library-resources-wrapper > a {
+  text-decoration: none;
+}
+.library-resources-wrapper > a > p {
+  text-transform: uppercase;
+  color: #381fd1;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: 'Roboto Mono';
+  margin: 0.5rem 0 0.5rem;
+}
+.library-resources-wrapper > a > h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: 'AmirGroteskBlack';
+}
+.library-resources-wrapper:hover {
+  border: 1px solid #acacaf;
+}
+.library-resources-wrapper:last-of-type {
+  margin-bottom: 4rem;
+}
+.collections-column {
+  height: 350px;
+  width: 259px;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.collections-column.first {
+  background-image: url(images/library_collection_Collection_Boundless_Disability_Employment_c297d236d9.png);
+  background-color: #f6f6eb;
+}
+.collections-column.second {
+  background-image: url(images/library_collection_making_accessible_color_combos_42c8d90a99.png);
+  background-color: #f3f2fc;
+}
+.collections-column.third {
+  background-image: url(images/library_collection_Inclusive_Social_Media_b9669e6d39.png);
+  background-color: #f6f6eb;
+}
+.collections-wrapper {
+  display: grid;
+  row-gap: 2rem;
+  margin-bottom: 4rem;
+}
+.collections-column > a {
+  text-decoration: none;
+}
+.collections-column > a > h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: 'AmirGroteskBlack';
+}
+footer {
+  margin-top: 10rem;
+  background-color: #10284b;
+  padding: 0 1.5rem;
+}
+.grid-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 7rem;
+}
+.footer-column > p, a {
+  color: #f6f6eb;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
+.footer-column > p:first-child {
+  color: white;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.footer-wrapper {
+  padding: 6rem 0;
+}
+.footer-socials {
+  display: flex;
+  justify-content: space-between;
+  max-width: 208px;
+}
+.footer-socials > a {
+  margin-bottom: 0;
+  height: 32px;
+  width: 32px;
+}
+.footer-socials > a > img {
+  height: 32px;
+  width: 32px;
+}
+.footer-p > p {
+  color: #fedb63;
+  font-family: 'Roboto Mono';
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-top: 2rem;
 }
