@@ -26,6 +26,12 @@ nav {
   justify-content: space-between;
   padding: 1rem;
 }
+.nav-list {
+  display: none;
+}
+.login {
+  display: none;
+}
 .free-trail {
   background-color: #381fd1;
   border-radius: 5px;
@@ -86,6 +92,7 @@ section {
   width: 57.6vw;
   border: 2px solid #acacaf;
   border-radius: 5px;
+  max-height: 44px;
 }
 .library >input::placeholder {
   color: #acacaf;
@@ -109,6 +116,7 @@ section {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .07em;
+  text-decoration: underline;
 }
 .section-heading > p {
   font-size: 1.25rem;
@@ -232,4 +240,113 @@ footer {
   font-weight: 900;
   letter-spacing: 1px;
   margin-top: 2rem;
+}
+.library-laptop {
+  display: none;
+}
+@media only screen and (min-width: 760px) {
+  section {
+    padding: 0 1.5rem;
+  }
+  .library-wrapper {
+    margin: 0 1.5rem;
+  }
+  .collections-wrapper {
+    grid-template-columns: repeat(auto-fill,261px);
+    column-gap: 2rem;
+  }
+  .grid-links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .trail-button {
+    display: none;
+  }
+  .login {
+    display: inline;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .nav-list > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+  }
+  .nav-list > ul > li > a {
+    color: #381fd1;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 0 0.5rem;
+    margin-left: 1rem;
+    display: flex;
+    margin-bottom: 0;
+  }
+  .login {
+    color: #381fd1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 1.5rem;
+    font-size: 0.875rem;
+    margin-left: 15rem;
+  }
+  .nav-wrapper {
+    justify-content: left;
+  }
+  .nav-wrapper-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .all-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .library-wrapper {
+    display: none;
+  }
+  .library-laptop {
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    grid-column: span 2;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+  .contribute {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    height: 204px;
+    width: 280px;
+    background-color: #f3f2fc;
+    border-radius: 10px;
+  }
+  .contribute > h4 {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .contribute > p {
+    margin: 0.5rem 0 1.5rem;
+  }
+  .submit-resource {
+    background-color: #381fd1;
+    height: 44px;
+    border-radius: 10px;
+  }
+  .submit-resource > a {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
 }
