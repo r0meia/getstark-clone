@@ -348,5 +348,105 @@ footer {
     height: 100%;
     width: 100%;
   }
+  .library-laptop > p {
+    color: #4b4b4e;
+    font-weight: 500;
+    margin-bottom: 0.875rem;
+    letter-spacing: 1px;
+  }
+  .library-laptop > input {
+    height: 44px;
+    width: 280px;
+    border: 2px solid #acacaf;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .library-laptop > input::placeholder {
+    padding: 1rem;
+  }
+  .options > a:first-of-type {
+    color: #381fd1;
+  }
+  .options > a {
+    color: #4b4b4e;
+    padding: 1rem 0 1rem 1.25rem;
+    margin-bottom: 0;
+  }
+  .options > a:last-of-type > img {
+    margin-left: 9.25rem;
+  }
+  .heading {
+    padding-top: 2rem;
+  }
+  .library-resources-wrapper {
+    max-height: 234px;
+    max-width: 261px;
+    padding: 1.5rem 1.5rem 2.5rem;
+  }
+  .library-resources-wrapper > a > h4 {
+    overflow: hidden;
+    width: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .collections-wrapper {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    margin-top: 6rem;
+  }
+  .footer-wrapper {
+    padding: 5rem 0 ;
+  }
+  .footer-socials {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .footer-socials-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-p > p {
+    margin-top: 0;
+  }
 
+}
+@media only screen and (min-width:1200px) {
+  footer { 
+    display: flex;
+    justify-content: center;
+  }
+  .all-wrapper {
+    width: 1200px;
+  }
+  .blocker {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+  }
+  .library-laptop {
+    padding: 4rem 0;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  section {
+    padding: 0;
+  }
+  .library-resources-wrapper {
+    margin-bottom: 0;
+  }
+  .library-resources {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .collections-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-wrapper {
+    width: 1160px;
+  }
 }
