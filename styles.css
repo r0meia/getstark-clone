@@ -279,6 +279,9 @@ footer {
   color: #381fd1;
 }
 .product-hover {
+  display: none;
+}
+.product-hover.active {
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -287,11 +290,14 @@ footer {
   background-color: white;
   border-radius: 5px;
   padding: 1rem;
-  left: 25em;
-  top: -.5rem;
+  width: 900px;
+  top: -0.5rem;
+
 }
 .product-hover-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .product-list {
   display: flex;
