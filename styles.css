@@ -29,8 +29,22 @@ nav {
 .nav-list {
   display: none;
 }
+.nav-list > ul > li > a {
+  padding: 0.25rem 0.5rem;
+}
+.nav-list > ul > li > a:hover {
+  box-shadow: #381fd1 0px 0px 0px, #381fd1 0px 0px 0px 2px;
+  border-radius: 5px;
+  transition: ease-in 0.1s;
+}
 .login {
   display: none;
+  padding: 0.25rem 0.5rem
+}
+.login:hover {
+  box-shadow: #381fd1 0px 0px 0px, #381fd1 0px 0px 0px 2px;
+  border-radius: 5px;
+  transition: ease-in 0.1s;
 }
 .free-trail {
   background-color: #381fd1;
@@ -42,6 +56,9 @@ nav {
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 1px;
+}
+.free-trail:hover {
+  opacity: 90%;
 }
 .trail-button {
   margin-left: 1.5rem;
@@ -93,6 +110,10 @@ section {
   border: 2px solid #acacaf;
   border-radius: 5px;
   max-height: 44px;
+}
+.library-laptop > input:focus {
+  outline: none;
+  border-color: #381fd1;
 }
 .library >input::placeholder {
   color: #acacaf;
@@ -167,6 +188,10 @@ section {
   background-repeat: no-repeat;
   border-radius: 10px;
   padding: 2rem;
+  transition: transform .2s;
+}
+.collections-column:hover {
+  transform: scale(1.05);
 }
 .collections-column.first {
   background-image: url(images/library_collection_Collection_Boundless_Disability_Employment_c297d236d9.png);
@@ -187,6 +212,9 @@ section {
 }
 .collections-column > a {
   text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 .collections-column > a > h4 {
   font-size: 1.5rem;
@@ -209,6 +237,9 @@ footer {
   font-weight: 600;
   text-decoration: none;
   margin-bottom: 0.8rem;
+}
+.footer-column > p > a:hover {
+  text-decoration: underline;
 }
 .footer-column > p:first-child {
   color: white;
@@ -243,6 +274,34 @@ footer {
 }
 .library-laptop {
   display: none;
+}
+.options > a:hover {
+  color: #381fd1;
+}
+.product-hover {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 11rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  left: 25em;
+  top: -.5rem;
+}
+.product-hover-wrapper {
+  position: relative;
+}
+.product-list {
+  display: flex;
+  flex-direction: column;
+}
+.product-list > a {
+  color: #381fd1;
+}
+.product-list > a:hover {
+  text-decoration: underline;
 }
 @media only screen and (min-width: 760px) {
   section {
@@ -281,7 +340,6 @@ footer {
     font-size: 0.875rem;
     font-weight: 900;
     letter-spacing: 1px;
-    padding: 0 0.5rem;
     margin-left: 1rem;
     display: flex;
     margin-bottom: 0;
@@ -347,6 +405,9 @@ footer {
     align-items: center;
     height: 100%;
     width: 100%;
+  }
+  .submit-resource:hover {
+    opacity: 90%;
   }
   .library-laptop > p {
     color: #4b4b4e;
