@@ -1,10 +1,18 @@
 const menu = document.querySelector(".menu");
 const dropMenu = document.querySelector(".product-hover")
-const dropMenuHover = document.querySelectorAll(".product-hover.active")
+const logo = document.querySelector(".logo")
+const pricing = document.querySelector(".pricing")
+const resources = document.querySelector(".resources")
 
 menu.addEventListener("mouseenter", () => {
-    dropMenu.classList.toggle("active");
+    dropMenu.classList.add("active");
 })
-dropMenuHover.addEventListener("mouseleave", () => {
+dropMenu.addEventListener("mouseleave", () => {
     dropMenu.classList.remove("active");
+})
+logo.addEventListener("mouseleave", () => {
+    dropMenu.classList.remove("active");
+})
+pricing.addEventListener("mouseenter", () => {
+    dropMenu.classList.remove("active")
 })
