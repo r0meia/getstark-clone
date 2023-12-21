@@ -110,6 +110,7 @@ section {
   border: 2px solid #acacaf;
   border-radius: 5px;
   max-height: 44px;
+  padding: 1.4rem;
 }
 .library-laptop > input:focus {
   outline: none;
@@ -117,7 +118,8 @@ section {
 }
 .library >input::placeholder {
   color: #acacaf;
-  padding: 1rem;
+  position: relative;
+  right: 1rem;
 }
 .heading {
   margin-top: 2.5rem;
@@ -499,9 +501,11 @@ footer {
     border: 2px solid #acacaf;
     border-radius: 5px;
     margin-bottom: 1rem;
+    padding: 1.4rem;
   }
   .library-laptop > input::placeholder {
-    padding: 1rem;
+    position: relative;
+    right: 1rem;
   }
   .options > a:first-of-type {
     color: #381fd1;
