@@ -27,3 +27,21 @@ resourcesActive.addEventListener("mouseleave", () => {
 resources.addEventListener("mouseleave", () => {
     resourcesActive.classList.remove("active");
 })
+
+const categories = document.querySelector(".a-categories")
+const categoriesActive = document.querySelector(".categories")
+const arrow = document.querySelector(".arrow")
+
+categories.addEventListener("click", () => {
+    categoriesActive.classList.toggle("active");
+    arrow.classList.toggle("rotate");
+})
+
+const bCategories = document.getElementById("b-categories")
+const bCategoriesActive = document.querySelector(".bcategories")
+const bArrow = document.querySelector(".barrow")
+
+bCategories.addEventListener("click", () => {
+    bCategoriesActive.classList.toggle("active");
+    bArrow.classList.toggle("brotate"); 
+})

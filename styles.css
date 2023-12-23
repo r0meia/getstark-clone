@@ -37,6 +37,16 @@ nav {
   border-radius: 5px;
   transition: ease-in 0.1s;
 }
+.nav-hamburger {
+  display: flex;
+  flex-direction: column;
+}
+.hamburger-first > p {
+  color: #381fd1;
+}
+.hamburger-product > a {
+  color: #381fd1;
+}
 .login {
   display: none;
   padding: 0.25rem 0.5rem
@@ -382,6 +392,50 @@ footer {
   font-size: 0.813rem;
   font-weight: 300;
 }
+.categories {
+  display: none;
+}
+.categories.active {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+}
+.categories > a {
+  color: #4b4b4e;
+  padding: 1rem 0;
+} 
+.categories > a:hover {
+  color: #381fd1;
+}
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+#b-categories:hover {
+  color: #381fd1;
+}
+
+.bcategories {
+  display: none;
+  background-color: #fafafa;
+  padding: 1rem;
+}
+.bcategories.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+}
+.bcategories > a {
+  color: #4b4b4e;
+} 
+.bcategories > a:hover {
+  color: #381fd1;
+}
+.barrow.brotate {
+  transform: rotate(180deg);
+}
+
 
 @media only screen and (min-width: 760px) {
   section {
