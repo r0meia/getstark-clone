@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, p {
 nav {
   background-color: #f6f6eb;
 }
+
 .nav-wrapper {
   display: flex;
   align-items: center;
@@ -38,14 +39,44 @@ nav {
   transition: ease-in 0.1s;
 }
 .nav-hamburger {
+  display: none;
+}
+.nav-hamburger.active {
   display: flex;
   flex-direction: column;
+  padding: 0 1.5rem;
+  background-color: #f6f6eb;
 }
 .hamburger-first > p {
   color: #381fd1;
+  font-size: 0.875rem;
+  font-weight: 900;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #cbcbcd;
+}
+.hamburger-product {
+  display: flex;
+  flex-direction: column;
 }
 .hamburger-product > a {
   color: #381fd1;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border-left: 1px solid #e5e5e6;
+  line-height: 1.7;
+}
+.hamburger-product > h4 {
+  font-size: 0.875rem;
+  padding: 1.5rem 0 0 0;
+}
+.hamburger-pricing {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #cbcbcd;
+}
+.hamburger-pricing > a {
+  color: #381fd1;
+  padding: 0 0.5rem;
 }
 .login {
   display: none;

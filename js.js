@@ -45,3 +45,14 @@ bCategories.addEventListener("click", () => {
     bCategoriesActive.classList.toggle("active");
     bArrow.classList.toggle("brotate"); 
 })
+
+const nav = document.querySelector(".trail-button")
+const navOpen = document.querySelector(".nav-hamburger")
+const body = document.querySelector("body")
+
+nav.addEventListener("click", () => {
+    navOpen.classList.toggle("active");
+})
+nav.addEventListener("click", () => {
+    body.classList.toggle("")
+})
